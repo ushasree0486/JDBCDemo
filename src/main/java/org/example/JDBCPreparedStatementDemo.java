@@ -19,7 +19,7 @@ public class JDBCPreparedStatementDemo {
         String insertQurey = "insert into employee values('7', 'Mohan' ,'USA')";
 
         try {
-            con = DriverManager.getConnection(url, uname, password); //get the connection with Driver manager
+            con = DriverManager.getConnection(url,uname,password); //get the connection with Driver manager
             Statement st = con.createStatement();
             int count = st.executeUpdate(insertQurey);
             System.out.println("No of rows affected == " + count);
