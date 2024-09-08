@@ -13,13 +13,13 @@ public class JDBCPreparedStatementDemo {
         String password = "Admin";
         ResultSet resultSet = null;
         Connection con = null;
-        String query = "selet * from employee";
-        String inserQurey = "insert into employee values('3', 'Barkha' ,'Wembley');";
+        String query = "select * from employee";
+        String insertQurey = "insert into employee values('3', 'Bharka' ,'Wembley');";
 
         try {
             con = DriverManager.getConnection(url, uname, password); //get the connection with Driver manager
             Statement st = con.createStatement();
-            int count = st.executeUpdate(inserQurey);
+            int count = st.executeUpdate(insertQurey);
             System.out.println("No of rows affected == " + count);
         } finally {
             if (resultSet != null)
