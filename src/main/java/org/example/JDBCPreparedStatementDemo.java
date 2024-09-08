@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.Random;
 
 public class JDBCPreparedStatementDemo {
     public static void main(String[] args) throws Exception {
@@ -13,8 +14,11 @@ public class JDBCPreparedStatementDemo {
         String password = "Admin";
         ResultSet resultSet = null;
         Connection con = null;
-        String query = "select * from employee";
-        String insertQurey = "insert into employee values('3', 'Bharka' ,'Wembley')";
+        Random random = new Random();
+        int rand_int1 = random.nextInt(1000);
+        String id = String.valueOf(rand_int1);
+        String query = "SELECT * FROM mydb.employee";
+        String insertQurey = "insert into employee values("+id+", 'Ushha' ,'Banglore')";
 
         try {
             con = DriverManager.getConnection(url, uname, password); //get the connection with Driver manager
