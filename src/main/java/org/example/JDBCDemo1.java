@@ -14,7 +14,7 @@ public class JDBCDemo1 {
         ResultSet resultSet = null;
         Connection con = null;
 
-        String query = "SELECT * FROM mydb.employee";
+       // String query = "SELECT * FROM mydb.employee";
         String insertQurey = "insert into employee values('7','Mohan','USA')";
 
         try {
@@ -29,8 +29,6 @@ public class JDBCDemo1 {
             }else{
                 System.out.println("No of rows updated ==" +st.getUpdateCount());
             }
-
-
 
             /*if (execute) {
                 ResultSet rs = st.executeQuery(insertQurey);
