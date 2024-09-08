@@ -14,11 +14,9 @@ public class JDBCPreparedStatementDemo {
         String password = "Admin";
         ResultSet resultSet = null;
         Connection con = null;
-        Random random = new Random();
-        int rand_int1 = random.nextInt(1000);
-        String id = String.valueOf(rand_int1);
+
         String query = "SELECT * FROM mydb.employee";
-        String insertQurey = "insert into employee values("+id+", 'Ushha' ,'Banglore')";
+        String insertQurey = "insert into employee values('6', 'Ushha' ,'Banglore')";
 
         try {
             con = DriverManager.getConnection(url, uname, password); //get the connection with Driver manager
