@@ -14,7 +14,7 @@ public class JDBCPreparedStatementDemo {
         ResultSet resultSet = null;
         Connection con = null;
         String query = "select * from employee";
-        String insertQurey = "insert into employee values('3', 'Bharka' ,'Wembley');";
+        String insertQurey = "insert into employee values('3', 'Bharka' ,'Wembley')";
 
         try {
             con = DriverManager.getConnection(url, uname, password); //get the connection with Driver manager
