@@ -34,7 +34,7 @@ public class TransactionDemoWithCommitAndRollBack {
         }
         System.out.println("Data After Transaction");
         System.out.println("....................");
-        ResultSet rs1 =st.executeQuery("select * from Account");
+        ResultSet rs1 =st.executeQuery("select * from account");
         while(rs1.next()){
             System.out.println( rs1.getString(1)+"..."+rs1.getInt(2));
         }
