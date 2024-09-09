@@ -19,8 +19,8 @@ public class TransactionDemoWithCommitAndRollBack {
         System.out.println("transaction Begins...");
         System.out.println(".....................");
         con.setAutoCommit(false);
-        st.executeUpdate("update accounts set balance=balance-2000 where user ='Milan'" );
-        st.executeUpdate("update accounts set balance=balance+2000 where user ='Anushka'" );
+        st.executeUpdate("update accounts set balance = balance-2000 where user ='Milan'" );
+        st.executeUpdate("update accounts set balance = balance+2000 where user ='Anushka'" );
         System.out.println("can u please confirm this transaction of 2000...[yes|No]");
         Scanner sc= new Scanner(System.in);
         String option =sc.next();
