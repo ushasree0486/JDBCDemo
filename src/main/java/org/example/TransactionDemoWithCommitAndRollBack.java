@@ -38,12 +38,6 @@ public class TransactionDemoWithCommitAndRollBack {
         while(rs1.next()){
             System.out.println( rs1.getString(1)+"..."+rs1.getInt(2));
         }
-
-
-
-
-
-
-
+         con.close();
     }
 }
