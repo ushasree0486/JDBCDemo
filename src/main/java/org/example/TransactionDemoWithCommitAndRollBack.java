@@ -16,7 +16,7 @@ public class TransactionDemoWithCommitAndRollBack {
         while(rs.next()){
             System.out.println( rs.getString(1)+"..."+rs.getInt(2));
         }
-        System.out.println("transaction begins...");
+        System.out.println("transaction Begins...");
         System.out.println(".....................");
         con.setAutoCommit(false);
         st.executeUpdate("update accounts setbalance=balance-2000 where user ='Milan'" );
