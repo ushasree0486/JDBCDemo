@@ -14,7 +14,7 @@ public class TransactionDemoWithCommitAndRollBack {
         System.out.println("Data before Transaction");
         ResultSet rs =st.executeQuery("select * from accounts");
         while(rs.next()){
-            System.out.println( rs.getString(1)+"..."+rs.getInt(2));
+            System.out.println( rs.getString(2)+"..."+rs.getInt(3));
         }
         System.out.println("transaction Begins...");
         System.out.println(".....................");
@@ -36,7 +36,7 @@ public class TransactionDemoWithCommitAndRollBack {
         System.out.println("....................");
         ResultSet rs1 =st.executeQuery("select * from accounts");
         while(rs1.next()){
-            System.out.println( rs1.getString(1)+"..."+rs1.getInt(2));
+            System.out.println( rs1.getString(2)+"..."+rs1.getInt(3));
         }
          con.close();
     }
