@@ -15,7 +15,7 @@ public class JDBCDemo1 {
         Connection con = null;
 
        // String query = "SELECT * FROM mydb.employee";
-        String insertQurey = "insert into employee values('9','subham','Pune')";
+        String insertQurey = "insert into employee values('10','shaurya','Banglore')";
 
         try {
             con = DriverManager.getConnection(url, uname, password); //get the connection with Driver manager
